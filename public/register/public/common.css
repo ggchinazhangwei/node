@@ -1,0 +1,60 @@
+.margin {
+  width: 1002px;
+  margin: 0 auto;
+  height: 100%; }
+
+header {
+  height: 90px; }
+  header .logo {
+    float: left;
+    margin: 16px 10px 0 0; }
+    header .logo img {
+      display: block; }
+  header .introduce {
+    float: left;
+    margin-top: 25px; }
+    header .introduce img {
+      display: block; }
+  header .login {
+    font: 14px/14px "";
+    height: 14px;
+    margin-top: 49px;
+    color: #ccc;
+    float: right; }
+    header .login > .sever {
+      position: relative;
+      color: #333;
+      display: inline-block; }
+      header .login > .sever:hover ul {
+        display: block; }
+      header .login > .sever ul {
+        display: none;
+        z-index: 2;
+        background: #fff;
+        position: absolute;
+        width: 85px;
+        top: 26px; }
+        header .login > .sever ul li a {
+          display: inline-block;
+          width: 100%;
+          font: 8px/20px "";
+          height: 20px;
+          text-align: center; }
+      header .login > .sever img {
+        margin-left: 5px; }
+    header .login > a {
+      margin: 0 25px;
+      color: blue; }
+      
+footer {
+  height: 200px;
+  background: #fafafa; }
+  footer p:first-child {
+    margin-top: 130px;
+    color: #333; }
+  footer p {
+    text-align: center;
+    font: 14px/24px "";
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */

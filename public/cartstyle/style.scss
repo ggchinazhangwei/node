@@ -1,0 +1,239 @@
+.margin{
+    width: 1000px;
+    margin: 0 auto;
+}
+#main{
+    input{cursor: pointer;}
+    h1{
+        i{
+            margin: 0 10px;
+        }
+        text-align: center;
+        font:700 12px/39px "";
+        color:#C40001;
+        border:2px solid #C40001;
+        background: #fff5f5;
+    }
+    .car{
+        margin-bottom: 100px;
+        max-height: 324px;
+        border: 1px solid #ccc;
+        border-top: 0;
+        overflow: auto;
+        .search{
+            box-sizing: border-box;
+             margin-bottom:80px;
+            .box{
+                width: 553px;
+                margin: 20px auto;
+                margin-top:50px;
+                overflow: hidden;
+                >img{float: left;}
+                .box1{
+                    float: left;
+                    p:nth-child(1){
+                        color: #ff9933;
+                        font:18px/41px "";
+                    }
+                    p:nth-child(2){
+                        color: #666;
+                        font:12px/12px "";
+                        a{
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+            .s-b{
+                margin: 0 auto;
+                width:360px;
+                height:40px;
+                border:1px solid #666666;               
+                input{
+                    box-sizing: border-box;
+                    padding: 0 10px;
+                    float:left;
+                    display:block ;
+                    border: 0;
+                    height: 100%;
+                    width:320px;
+                }
+                i{
+                     float:left;
+                    display: block;
+                    font:25px/40px "";
+                    text-align: center;
+                    width:40px;
+                }
+            }
+        }
+        .mcar{
+            .mtitle{
+                font:15px/46px "";
+                color: #777777;
+                span{
+                    margin:0 16px;
+                    a{
+                        margin: 0 10px;
+                    }
+                }
+                span:first-child{
+                    font-size: 24px;
+                    color: #333;
+                }
+            }
+            .he{
+                border: 1px solid #e4e4e4;
+                font: 12px/36px "";
+                height: 36px;
+                color: #777777;
+                background: #fbfbfb;
+                padding: 0 5px;
+                box-sizing: border-box;
+                input{
+                    margin: 10px 5px 0 0;
+                }
+                span{
+                    &:nth-child(2){
+                        margin: 0 250px 0 67px;
+                    }
+                    margin:0 35px
+                }
+            }
+            .plist{ 
+                li{
+                    border: 1px solid #e4e4e4;
+                    margin: 10px 0;
+                   overflow: hidden;
+                   height: 90px;
+                   box-sizing:border-box ;
+                   padding: 0 30px 0 5px;
+                    >*{
+                        float:left;
+                    }
+                    .tbox{
+                        width: 280px;                    
+                    }
+                    >input{
+                        margin-top: 38px;
+                    }
+                    span,div{
+                        display: block;
+                        height: 100%;
+                        font: 15px/90px "";
+                        margin: 0 20px;
+                    }
+                    img{
+                        width:50px;
+                        height: 50px;
+                        margin: 20px;
+                    }
+                    .carsum{
+                        height:20px;
+                        border:1px solid  #cccccc;
+                        margin:35px 0 0 60px;
+                        .c-number{
+                            text-align: center;
+                            height:20px;
+                            float: left;
+                            width:20px;
+                            border: 0;
+                        }
+                        input:nth-child(2n-1){
+                            width: 20px;
+                            text-align: center;
+                            cursor: pointer;
+                            height:20px;
+                            float: left;
+                            background: #fdfdfd;
+                            border: 0;
+                            
+                        }
+                        input:nth-child(1){
+                            border-right:1px  solid #cccccc ;
+                        }
+                        input:nth-child(3){
+                            border-left:1px  solid #cccccc ;
+                        }
+                    }     
+                    .heji{
+                        margin:0 55px;
+                        font-weight:800;
+                        color: #C40001;
+                 
+                    }
+                    .removep{
+                        border: 0;
+                        background: #fff;
+                       
+                    }             
+            }
+        }
+        }
+    }
+    .jiesuan{
+        border:1px  solid #cccccc ;
+        margin: 20px 0;
+           >p{
+            padding-top:20px ;   
+            height:63px;
+            font:12px/63px "";
+            text-align: right;           
+            padding-right:30px ;
+            word-spacing: 20px;
+            span{               
+                display: inline-block;
+                text-align: center;
+            }           
+           }
+           .jiesuan-b{
+               height:47px;
+               font:12px/47px "";
+               background: #f2f2f2;
+               position: relative;
+              .box{
+                  height: 100%;
+                  position: absolute;
+                  right: 0px;
+                  top:0;
+                  overflow: hidden;
+                  .od{
+                      float: left;
+                      font-size: 16px;
+                      .j3{
+                          font:700 20px/47px "";
+                             color: #CC0000;
+                            display: inline-block;
+                             width: 100px;
+                             text-align: center;
+                      }
+                      
+                      
+                  }
+                  >a{
+                     float: left;
+                     display: block;
+                     height: 100%;
+                     width:100px;
+                     text-align: center;
+                     font:700 16px/47px "";
+                     color: #fff;
+                     background: #CC3333;
+                  }
+              }
+              .btn1,.btn2{
+                  border: 0;
+                 background: #f2f2f2;
+                 margin: 0 10px;
+                 cursor: pointer;
+              }
+              >a{
+                  background: #fff;
+                  font: 14px;
+              }
+              .sumck{
+                  margin:0 5px ;
+              }
+           }
+       }
+}

@@ -1,0 +1,99 @@
+#main{
+    position: relative;
+    height: 540px;
+    background:url(../image/b1.jpg) no-repeat -330px -20px;
+    .enter{
+        width:318px;
+        height:371px;
+        background: #FFF;
+        position:absolute;
+        top:90px;
+        right:200px;
+        box-sizing: border-box;
+        padding: 0 35px;
+        p{
+            font:14px/45px "";
+            text-align: center;
+            color: #ccc;
+            border-bottom:1px solid #ccc ;
+             >img{
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+        }
+        #yanzhen{
+            position: relative;
+                .msg{
+                    position: absolute;
+                    font: 10px/15px "";
+                    background: red;
+                    color: #fff;
+                    right:20px;
+                    bottom: -15px;
+                    display: none;
+                }
+                #mr{
+                    position: absolute;
+                    right: 20px;
+                    font: 18px/40px "";
+                }
+            }
+        .ibox{
+            height: 40px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+            .zbox{
+                width:40px;
+                background: #f3f3f3;
+                float:left;
+                height: 100%;
+                text-align: center;
+                font:16px/40px "";
+            }
+            input{
+                border: 0;
+                height: 100%;
+                width:206px;
+                float: left;
+                font:14px/30px "";
+                padding:5px;
+                box-sizing: border-box;
+                color: #cfcfcf;
+                &::-webkit-input-placeholder { 
+                        color:#cfcfcf;
+                    }
+            }
+        }
+        .go{
+            height:34px;
+            font:bold 14px/34px "";
+            text-align: center;
+            color: #fff;
+            background: red;
+            margin-top: 20px;
+            
+        }
+        .memory{
+            position: relative;           
+            font:12px/36px "";
+            height: 36px;
+            border-bottom:1px dashed #CCCCCC;
+            input{
+                display: inline-block;
+                vertical-align: middle;
+                margin-right:5px;
+                
+            }
+            >a:nth-of-type(1){
+                margin: 0 10px 0 70px;
+            }
+        }
+        .firend{
+            font: 12px/50px "";
+            >a{
+                margin: 0 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+<header class="valign">
+
+			<div class="only">欢迎来到酒仙网<a href="register/register.html">请登录</a>
+			<a href="login/login.html">免费注册</a></div>
+			<div class="me">
+				我的酒仙<i class="iconfont">&#xe7e7;</i>
+				<ul>
+					<li><a href="">我的订单</a></li>
+					<li><a href="">物流跟踪</a></li>
+					<li><a href="">我的优惠券</a></li>
+				</ul>		
+			</div>
+			<a style="color: red">CEO信箱</a>
+			<a href="Cart.html" class="shopcar"><i class="iconfont">&#xe602;</i>购物车<span class="shopsum">0</span>件</a>
+			<a href="">CULB会员</a>
+			<a href="">|招商入驻</a>
+			<div class="ma">
+			<a href="">|<img src="image/b2.jpg">|</a>
+			<div class="shaoma"></div>
+			</div>
+			<div class="server">
+				<i class="iconfont">&#xe622;</i>
+				网站导航
+				<i class="iconfont">&#xe7e7;</i>
+				<ul id="subnav">
+				<li>咨询热线：400-617-9999</li>
+				</ul>
+			</div>
+			<div class="kehu">
+				<i class="iconfont">&#xe636;</i>
+				客户服务
+				<i class="iconfont">&#xe7e7;</i>
+			</div>
+			<div class="tel">客服热线<b>400-617-9999</b></div>
+		</header>
+		<div id ="headerbanner"></div>
+		<!--搜索模块所有结构-->
+		<div id ="search" class="margin">
+			<a href="index.html" class="logo"><img src="image/logo.png"></a>
+			<a href="index.html" class="phone"><img src="image/g1.gif"></a>
+			<div class="s-main">
+				<div class="m-box">
+					<input type="text" class="txt" placeholder="输入你想要的内容"/>
+					<input type="button"  value="搜索" class="btn"/>
+				</div>
+				<p>80万瓶美酒1元秒  | 茅台 五粮液 | 剑南春  | 泸州老窖  | 洋河 拉菲  | 黄尾袋鼠 |  奔富</p>
+			</div>
+			<a href="" class="express"><img src="image/b2.png"></a>
+			<a href="" class="sma"><img src="image/b1.png"></a>
+		</div>
+		
+		<!--导航栏所有结构-->
+		<div id ="nav">
+			<div class="margin">
+			<div class="classify">
+				<h3>所有商品分类</h3>
+				<ul class="lei">
+				<ul>
+				<script id="lei" type="text/html">
+					{{each nav as val i}}
+					<li>
+						<div class="imgxb"><div class="imgx"><i class="iconfont">&#xe6cf;</i></div><span>{{val.title}}<span></div>
+						<div class="box">
+						{{each val.content as a b}}
+							<a href="listview.html">{{a}}</a>
+						{{/each}}
+						</div>
+						<div class="all">
+							<div class="all-l">
+								{{each val.h as i j}}
+								<p>{{i.title}}</p>
+								{{/each}}
+							</div>
+							<div class="all-c">
+								{{each val.h as i j}}
+								<p>
+								{{ each i.content as o k}}
+								<a href="listview.html?page1">{{o}}</a>
+								{{/each}}
+								</p>
+								{{/each}}
+							</div>
+							<img src="image/{{val.img}}" class="all-r">
+						</div>
+					</li>
+					{{/each}}
+				</script>
+			</div>
+			<ul class='nav'>
+				<li><a href="">首页</a></li>
+				<li><a href="">啤酒</a></li>
+				<li><a href="">领券中心</a></li>
+				<li><a href="">闪团</a></li>
+				<li><a href="">葡萄酒团</a></li>
+				<li><a href="">洋酒馆</a></li>
+				<li><a href="">清仓</a></li>
+				<li><a href="">古井大牌日</a></li>
+				<li><a href="">新品</a></li>
+			</ul>
+			<img src="image/g2.gif" class="ad">
+		</div>
+		</div>

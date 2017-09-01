@@ -1,0 +1,122 @@
+.margin {
+  width: 1200px;
+  margin: 0 auto; }
+
+#banner {
+  position: relative;
+  height: 473px; }
+  #banner .banner {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #banner .banner li {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; }
+      #banner .banner li .mbox {
+        right: 114px;
+        position: absolute; }
+        #banner .banner li .mbox > div {
+          border-bottom: 1px solid #C0C0C0; }
+          #banner .banner li .mbox > div:nth-child(3) {
+            border: 0; }
+          #banner .banner li .mbox > div img {
+            width: 160px;
+            height: 156.4px; }
+  #banner .b-tab {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%); }
+    #banner .b-tab b {
+      display: block;
+      float: left;
+      width: 15px;
+      height: 15px;
+      background: black;
+      color: #fff;
+      text-align: center;
+      font: 10px/15px "";
+      margin: 0 5px;
+      border-radius: 50%; }
+      #banner .b-tab b.active {
+        background: #CC0000; }
+
+#main {
+  background: #f9f9f9;
+  position: relative; }
+  #main .zuo {
+    position: absolute;
+    min-width: 74px;
+    height: 500px;
+    top: 0;
+    background: url(../image/m1.jpg) no-repeat center;
+    left: 0; }
+  #main .you {
+    position: absolute;
+    min-width:74px;
+    height: 500px;
+    top: 0;
+    background: url(../image/m2.jpg) no-repeat center;
+    right: 0; }
+  #main .title {
+    height: 42px; }
+    #main .title .icon1 {
+      float: left;
+      margin-top: 10px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      font: 16px/30px "";
+      color: #fff;
+      background: url(../image/sum.png) no-repeat 0 -94px; }
+    #main .title .text {
+      float: left;
+      font: 14px/25px "";
+      margin: 14px 5px 0 5px; }
+    #main .title .city {
+      float: right;
+      font: 12px/42px "";
+      color: #666666;
+      word-spacing: 3px; }
+      #main .title .city span {
+        background: #CC0000;
+        color: #fff;
+        display: inline-block;
+        font: 12px/20px "";
+        margin: 11px 5px;
+        padding: 0 5px; }
+  #main .l1 .l-t {
+    overflow: hidden;
+    background: #fff; }
+    #main .l1 .l-t .lunbo, #main .l1 .l-t .lunbo2, #main .l1 .l-t .lunbo3, #main .l1 .l-t .lunbo4, #main .l1 .l-t .lunbo5 {
+      float: left; }
+    #main .l1 .l-t .product {
+      width: 1000px;
+      height: 500px;
+      float: left; }
+      #main .l1 .l-t .product > ul {
+        width: 1000px;
+        height: 500px; }
+        #main .l1 .l-t .product > ul li {
+          float: left;
+          width: 200px;
+          height: 250px;
+          box-sizing: border-box;
+          padding: 5px 10px; }
+          #main .l1 .l-t .product > ul li a {
+            width: 100%;
+            height: 100%;
+            display: block; }
+            #main .l1 .l-t .product > ul li a img {
+              width: 200px;
+              height: 180px; }
+            #main .l1 .l-t .product > ul li a p {
+              color: #b77d7d;
+              font: 600 10px/18px ""; }
+            #main .l1 .l-t .product > ul li a h3 {
+              color: #d6014f; }
+
+/*# sourceMappingURL=style.css.map */

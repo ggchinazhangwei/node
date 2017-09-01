@@ -1,0 +1,233 @@
+#carmsg {
+  display: none;
+  width: 100%;
+  height: 1387px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0; }
+  #carmsg .box {
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 446px;
+    height: 331px;
+    background: #fff;
+    border: #cccccc 3px solid;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%); }
+    #carmsg .box .cha {
+      margin: 0;
+      position: absolute;
+      right: 3px;
+      top: 3px; }
+    #carmsg .box > img {
+      display: block;
+      margin: 20px auto; }
+    #carmsg .box p {
+      overflow: hidden; }
+      #carmsg .box p > a {
+        float: left;
+        display: block;
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        font: 12px/30px '';
+        background: #CC0001;
+        color: #fff; }
+      #carmsg .box p > a:first-child {
+        background: #fbfbfb;
+        color: #333;
+        margin-left: 28%;
+        margin-right: 20px; }
+    #carmsg .box h3 {
+      margin-top: 20px;
+      font: 10px/20px "";
+      color: #ccc;
+      border-top: 1px solid #ccc;
+      text-align: center; }
+    #carmsg .box .guild {
+      overflow: hidden;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around; }
+      #carmsg .box .guild li {
+        border: 1px solid #ccc;
+        float: left; }
+        #carmsg .box .guild li a {
+          display: block; }
+          #carmsg .box .guild li a img {
+            width: 80px;
+            height: 80px; }
+
+.classify ul {
+  display: none; }
+
+#title {
+  font: 700 14px/40px ""; }
+  #title a {
+    margin-right: 10px; }
+  #title span {
+    color: #CC0000; }
+
+#main {
+  border: 1px solid #f2f2f2;
+  overflow: hidden; }
+  #main .show {
+    position: relative;
+    float: left;
+    width: 420px; }
+    #main .show .zhong {
+      position: relative;
+      width: 100%;
+      height: 420px; }
+      #main .show .zhong > img {
+        width: 100%;
+        height: 100%; }
+      #main .show .zhong .ze {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        background: #fede4f;
+        opacity: .5;
+        left: 0;
+        top: 0;
+        cursor: move;
+        display: none; }
+    #main .show .da {
+      display: none;
+      border: 1px solid #ccc;
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      left: 420px;
+      top: 0;
+      overflow: hidden; }
+      #main .show .da .imgb {
+        left: -50%;
+        top: -50%;
+        position: absolute;
+        z-index: 10; }
+        #main .show .da .imgb img {
+          width: 800px;
+          height: 800px; }
+    #main .show .xiao ul {
+      overflow: hidden; }
+      #main .show .xiao ul li {
+        width: 54px;
+        height: 54px;
+        float: left;
+        margin: 5px 2px;
+        box-sizing: border-box; }
+        #main .show .xiao ul li:hover {
+          border: 2px solid #C2782F; }
+        #main .show .xiao ul li img {
+          width: 100%;
+          height: 100%; }
+    #main .show p {
+      font: 12px/40px ""; }
+      #main .show p span {
+        float: right;
+        margin-right: 40px; }
+        #main .show p span img {
+          margin: 0 3px; }
+  #main .detail {
+    height: 484px;
+    float: left;
+    width: 780px;
+    box-sizing: border-box;
+    padding-right: 168px;
+    padding-top: 10px; }
+    #main .detail .depublic, #main .detail .detail-c > span, #main .detail .detail-b p > span {
+      margin-right: 20px;
+      display: block;
+      float: left;
+      font: 12px/20px "";
+      width: 24px; }
+    #main .detail h1 {
+      color: #333;
+      font: 700 16px/30px ""; }
+    #main .detail .detail-c {
+      padding: 20px 5px;
+      margin: 20px 0;
+      background: #fafafa; }
+      #main .detail .detail-c b {
+        font: 700 18px/40px "";
+        color: #cc3333; }
+      #main .detail .detail-c .sm {
+        position: relative;
+        float: right;
+        font: 700 12px/30px "";
+        background: #fff;
+        margin: 5px 20px; }
+        #main .detail .detail-c .sm > img {
+          width: 15px;
+          height: 14px; }
+        #main .detail .detail-c .sm .ma {
+          position: absolute;
+          top: 40px;
+          width: 100%;
+          display: none; }
+          #main .detail .detail-c .sm .ma img {
+            width: 100%; }
+        #main .detail .detail-c .sm:hover .ma {
+          display: block; }
+    #main .detail .detail-b p {
+      height: 40px;
+      padding: 20px 0; }
+    #main .detail .detail-b p:nth-child(2) s {
+      display: block;
+      float: left;
+      width: 40px;
+      height: 40px; }
+      #main .detail .detail-b p:nth-child(2) s img {
+        width: 100%;
+        height: 100%; }
+      #main .detail .detail-b p:nth-child(2) s.ib {
+        border: 1px solid #C2782F; }
+    #main .detail .detail-b p:nth-child(2) #smsg {
+      font-weight: 700;
+      margin-left: 20px; }
+    #main .detail .detail-b p:nth-child(3) .box {
+      position: relative;
+      height: 100%;
+      float: left; }
+      #main .detail .detail-b p:nth-child(3) .box .pronu {
+        text-indent: 10px;
+        line-height: 30px;
+        margin-top: 10px;
+        display: block;
+        width: 40px;
+        height: 30px;
+        border: 1px solid #0086B3; }
+      #main .detail .detail-b p:nth-child(3) .box .minusbtn {
+        cursor: pointer;
+        right: -16px;
+        border: 1px solid #0086B3;
+        bottom: 0px;
+        font: 700 10px/10px "";
+        text-align: center;
+        display: block;
+        position: absolute;
+        transform: rotate(180deg); }
+      #main .detail .detail-b p:nth-child(3) .box .addbtn {
+        cursor: pointer;
+        border: 1px solid #0086B3;
+        top: 10px;
+        right: -15px;
+        font: 700 10px/10px "";
+        text-align: center;
+        display: block;
+        position: absolute; }
+    #main .detail #shopcar {
+      border: 0;
+      margin: 20px;
+      width: 100px;
+      background: #C2782F;
+      color: #fff;
+      text-align: center;
+      font: 12px/30px ""; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="public/common1.css"/>
+		<link rel="stylesheet" type="text/css" href="partstyle/style.css"/>
+		<link rel="stylesheet" type="text/css" href="style/icon.css"/>
+	</head>
+	<body>
+		<div id="bao"></div>
+		<div id="title" class="margin">
+		<a href="../index/index.html">首页&gt;</a>
+		</div>
+		<script type="text/html" id="titles">
+			<a href="">{{lei}}&gt;</a>
+			<span>{{title}}</span>
+		</script>
+		<div id="main" class="margin">
+			<!--图片展示区域-->
+			<div class="show">
+			</div>
+			
+			<script type="text/html" id="show">
+			<div class="zhong">
+				<img src="{{img1url[0]}}">
+				<div class="ze"></div>
+			</div>
+			<div class="da">
+				<div class="imgb">
+				<img src="{{img1url[0]}}">
+				</div>
+			</div>
+			<div class="xiao">
+				<ul class="min">
+					{{each img1url as item}}
+					<li><img src={{item}}></li>
+					{{/each}}
+				</ul>
+			</div>
+			<p>商品编号：{{productId}}<span><img src="image/pb1.jpg" />分享<img src="image/pb2.jpg"/>收藏</span></p>
+			</script>
+			<!--商品信息框-->
+			<div class="detail">
+			</div>
+			<script type="text/html" id="detail">
+					<h1>{{title}}</h1>
+					<div class="detail-c">
+					<span>酒仙价</span><b>{{price}}</b><div class="sm"><img src="image/pb3.jpg">手机购买<div class="ma"><img src="image/pb3.jpg"></div></div>
+					</div>
+					<div class="detail-b">
+						<p><span>配送到</span>
+							<select>
+								<option>北京 北京市 东城区</option>
+								<option>北京 北京市  西城区</option>
+							</select>
+							<b>有货</b>
+						</p>
+						<p><span>选 择</span>
+							<s id="checkpro"><img src={{img1url[0]}}></s>
+							<span id="smsg"></span>
+						</p>
+						<p><span>数 量</span>
+						<b class="box">
+							<input type="" value="1" class="pronu"/>
+							<span class="addbtn">^</span>
+							<span class="minusbtn">^</span>
+						</b>
+						</p>
+					</div>
+					<input type="button" id="shopcar" value="加入购物车">
+			</script>
+		</div>
+		<div id="carmsg">			
+			<div class="box clear">
+				<img src="image/cha.png" class="cha">
+				<img src="image/msg.png">
+				<p><a href="index.html">继续购物</a>
+				<a href="Cart.html">查看购物车</a></p>
+				<h3>买过该商品的其他用户还购买了</h3>
+				<ul class="guild">				
+				</ul>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/sea.js"></script>
+	<script>seajs.use("particulars.js")</script>
+</html>

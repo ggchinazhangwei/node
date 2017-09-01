@@ -1,0 +1,35 @@
+.lunbo, .lunbo2, .lunbo3, .lunbo4, .lunbo5 {
+  position: relative;
+  overflow: hidden; }
+  .lunbo ul:first-child, .lunbo2 ul:first-child, .lunbo3 ul:first-child, .lunbo4 ul:first-child, .lunbo5 ul:first-child {
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .lunbo ul:first-child li, .lunbo2 ul:first-child li, .lunbo3 ul:first-child li, .lunbo4 ul:first-child li, .lunbo5 ul:first-child li {
+      float: left; }
+      .lunbo ul:first-child li img, .lunbo2 ul:first-child li img, .lunbo3 ul:first-child li img, .lunbo4 ul:first-child li img, .lunbo5 ul:first-child li img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+  .lunbo .anchorbox, .lunbo2 .anchorbox, .lunbo3 .anchorbox, .lunbo4 .anchorbox, .lunbo5 .anchorbox {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000000;
+    opacity: 0.5;
+    border-radius: 10px; }
+    .lunbo .anchorbox > b, .lunbo2 .anchorbox > b, .lunbo3 .anchorbox > b, .lunbo4 .anchorbox > b, .lunbo5 .anchorbox > b {
+      border-radius: 50%;
+      display: inline-block;
+      font: 10px/15px "";
+      text-align: center;
+      width: 15px;
+      height: 15px;
+      background: #fff;
+      margin: 5px;
+      color: #0086B3; }
+      .lunbo .anchorbox > b.active, .lunbo2 .anchorbox > b.active, .lunbo3 .anchorbox > b.active, .lunbo4 .anchorbox > b.active, .lunbo5 .anchorbox > b.active {
+        background: #73A216; }
+
+/*# sourceMappingURL=style.css.map */

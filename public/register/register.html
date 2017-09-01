@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style/public.css"/>
+		<link rel="stylesheet" type="text/css" href="public/common.css"/>
+		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+		<style type="text/css">
+			@font-face {
+			  font-family: 'iconfont';  /* project id 372023 */
+			  src: url('//at.alicdn.com/t/font_zc24ipztwbvp9zfr.eot');
+			  src: url('//at.alicdn.com/t/font_zc24ipztwbvp9zfr.eot?#iefix') format('embedded-opentype'),
+			  url('//at.alicdn.com/t/font_zc24ipztwbvp9zfr.woff') format('woff'),
+			  url('//at.alicdn.com/t/font_zc24ipztwbvp9zfr.ttf') format('truetype'),
+			  url('//at.alicdn.com/t/font_zc24ipztwbvp9zfr.svg#iconfont') format('svg');
+			}
+			.iconfont{
+			    font-family:"iconfont" !important;
+			    font-size:16px;
+			    color: #cfcfcf;
+			  }
+			  .iconfont1{
+			    font-family:"iconfont" !important;
+			    font-size:25px;
+			    color: #cfcfcf;
+			  }
+			  .iconfont2{
+			    font-family:"iconfont" !important;
+			    font-size:28px;
+			    color: #cfcfcf;
+			  }
+			  
+		</style>
+	</head>
+	<body>
+		<header id="header"></header>
+		<div id="main">
+		<div class="enter">
+			<p>账号登录<img src="image/b.png"></p>
+			<div class="ibox"><div class="zbox"><i class="iconfont">&#xe636;</i></div><input type="text" placeholder="用户名/邮箱/手机号" id="username"></div>
+			<div class="ibox"><div class="zbox"><i class="iconfont">&#xe600;</i></div><input type="password" placeholder="密码" id="password"></div>
+			<div class="ibox" id="yanzhen"><div class="zbox"><i class="iconfont">&#xe7e6;</i></div><input type="text" placeholder="验证码" id="code"><div class="msg">用户命或者密码错误</div><b id="mr"></b></div>
+			<div class="go">登录</div>
+			<div class="memory valign">
+				<input type="checkbox">自动登录 <a href="https://login.jiuxian.com/recoverPwd.htm">忘记密码</a><a href="../login/login.html">免费注册</a>
+			</div>
+			<div class="firend">使用合作账号登录<a href="https://graph.qq.com/oauth/show?which=Login&display=pc&client_id=100477629&redirect_uri=https://login.jiuxian.com/union/call_back.htm?union=qq&response_type=code&state=d42ad5deddfe737605d3414fbb397d32&scope=get_user_info" class="iconfont2">&#xe62a;</a><a href="https://api.weibo.com/oauth2/authorize?client_id=488679653&response_type=code&redirect_uri=https%3A%2F%2Flogin.jiuxian.com%2Funion%2Fcall_back.htm%3Funion%3Dweibo" class="iconfont1">&#xe601;</a><a href="https://auth.alipay.com/login/express.htm?goto=https%3A%2F%2Fmemberexprod.alipay.com%3A443%2Fauthorize%2FuserAuthQuickLoginAction.htm%3Fe_i_i_d%3D2711847dd59c63add78fb0fb7b4fa646" class="iconfont1">&#xe66f;</a><a href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&redirect_uri=https%3A%2F%2Flogin.jiuxian.com%2Funion%2Fcall_back.htm%3Funion%3Dbaidutuan&state=a7c6953656a0e48be47bf26503134458&client_id=msbqkzYYrefxUDkUu9vBQ4O3" class="iconfont2">&#xe654;</a></div>
+		</div>
+		</div>
+		<footer id="footer"  class="clear"></footer>
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var flag=true;
+			$("#header").load("public/header.html");
+			$("#footer").load("public/foot.html");
+			function getCode(odom){
+				var str = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+				var sum="";
+				for(var i= 0;i<4;i++){
+					sum+=str.substr(Math.floor(Math.random()*36),1)
+				}
+				odom.html(sum);
+			}
+			getCode($("#mr"));
+			$("#mr").click(function(){
+				getCode($("#mr"));
+			})
+			$("input").on("focus",function(){
+				$(".msg").css({"display":"none"});
+			});
+			$(".go").click(function(){
+				$(".msg").css({"display":"none"});
+					if($("#mr").html()==$("#code").val()){
+						$.post("/register",{"username":$("#username").val(),"password":$("#password").val()},function(data){
+						if(data.main==true){
+							location.href="/index.html";
+						}else{
+							getCode($("#mr"));
+							$(".msg").html(data.msg);
+							$(".msg").css({"display":"block"});
+						}
+						})
+					}else{
+						getCode($("#mr"));
+						$(".msg").html("验证码输入错误");
+						$(".msg").css({"display":"block"});
+					}
+					
+
+			})
+			
+		})
+	</script>
+</html>

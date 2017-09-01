@@ -1,0 +1,138 @@
+#carmsg {
+  display: none;
+  width: 100%;
+  height: 1387px;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0; }
+  #carmsg .box {
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 446px;
+    height: 331px;
+    background: #fff;
+    border: #cccccc 3px solid;
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%); }
+    #carmsg .box .cha {
+      margin: 0;
+      position: absolute;
+      right: 3px;
+      top: 3px; }
+    #carmsg .box > img {
+      display: block;
+      margin: 20px auto; }
+    #carmsg .box p {
+      overflow: hidden; }
+      #carmsg .box p > a {
+        float: left;
+        display: block;
+        width: 90px;
+        height: 30px;
+        text-align: center;
+        font: 12px/30px '';
+        background: #CC0001;
+        color: #fff; }
+      #carmsg .box p > a:first-child {
+        background: #fbfbfb;
+        color: #333;
+        margin-left: 28%;
+        margin-right: 20px; }
+    #carmsg .box h3 {
+      margin-top: 20px;
+      font: 10px/20px "";
+      color: #ccc;
+      border-top: 1px solid #ccc;
+      text-align: center; }
+    #carmsg .box .guild {
+      overflow: hidden;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-around; }
+      #carmsg .box .guild li {
+        border: 1px solid #ccc;
+        float: left; }
+        #carmsg .box .guild li a {
+          display: block; }
+          #carmsg .box .guild li a img {
+            width: 80px;
+            height: 80px; }
+
+#main {
+  padding-bottom: 100px;
+  position: relative; }
+  #main .page {
+    position: absolute;
+    overflow: hidden;
+    bottom: 30px;
+    right: 100px; }
+    #main .page a {
+      text-align: center;
+      color: #333;
+      line-height: 26px;
+      margin-right: 6px;
+      width: 36px;
+      height: 26px;
+      float: left;
+      display: block;
+      border: 1px #e6e6e6 solid; }
+      #main .page a.active {
+        background: #c41921;
+        color: #fff; }
+  #main .shuju {
+    overflow: hidden; }
+    #main .shuju li {
+      padding: 10px;
+      float: left;
+      box-sizing: border-box;
+      width: 200px;
+      height: 420px; }
+      #main .shuju li:hover {
+        border: 1px solid #e5e5e5; }
+      #main .shuju li .shang {
+        width: 180px;
+        height: 200px; }
+      #main .shuju li .p1 {
+        font: 700 14px/30px "";
+        color: #e4393c; }
+      #main .shuju li p {
+        font: 12px/20px "";
+        color: #005aa0; }
+      #main .shuju li .shujub {
+        overflow: hidden;
+        margin: 10px 0; }
+        #main .shuju li .shujub .pronu {
+          margin-right: 10px;
+          float: left;
+          width: 27px;
+          height: 27px;
+          border: 1px solid #dbdbdb;
+          text-align: center;
+          border-radius: 3px; }
+        #main .shuju li .shujub .box {
+          margin-right: 10px;
+          border-radius: 1px;
+          border: 1px solid #dbdbdb;
+          float: left; }
+          #main .shuju li .shujub .box span {
+            font: 10px/13.5px "";
+            text-align: center;
+            display: block;
+            width: 13px;
+            height: 13.5px; }
+            #main .shuju li .shujub .box span:last-child {
+              transform: rotate(180deg);
+              border-bottom: 1px solid #dbdbdb;
+              text-indent: 2px; }
+        #main .shuju li .shujub .shopcar1 {
+          border: 1px solid #dbdbdb;
+          width: 109px;
+          height: 29px;
+          float: left;
+          background: #fff; }
+
+/*# sourceMappingURL=style.css.map */

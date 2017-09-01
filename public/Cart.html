@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="style/public.css"/>
+	<link rel="stylesheet" type="text/css" href="style/icon.css"/>
+	<link rel="stylesheet" type="text/css" href="cartstyle/style.css"/>
+	<link rel="stylesheet" type="text/css" href="public/common1.css"/>
+	<body>
+		<div id="main">
+		<div class="margin">
+			<img src="image/cart/shui.png"/>
+			<h1><i class="iconfont">&#xe67c;</i>温馨提示：自营商品实付满100免运费，偏远地区满500免运费</h1>
+			<div class="car">
+				<div class="mcar">
+					<p class="mtitle"><span>购物车</span><span>|</span><span>北京北京市东城区<a href="../register/register.html">现在登录</a>您购物车中的商品将被永久保存</span></p>
+					<div class="he clear">
+						<input type="checkbox" class='sumck' checked/>全选<span>商品名称</span>
+						<span>酒仙价</span><span>送金币</span><span>数量</span><span>商品合计</span><span>操作</span>
+					</div>
+					<div class='carbox'></div>
+				</div>
+			</div>
+			<div class="jiesuan">
+					<p>商品数量<span class="j1"></span>件  赠送金币<span class="j2"></span>个</p>
+					<div class="jiesuan-b">
+						<input type="checkbox" checked class='sumck'/>全选<input type="button" class='btn1' value="删除选中商品">
+						<input type="button" class='btn2' value="清空购物车"><a href="index.html">继续购物</a>
+						<div class="box"><div class="od">总 计 ( 不 含 运 费 ) <span class="j3"></span></div><a href="">去结算</a></div>
+					</div>
+			</div>
+			<!--没有数据时候的显示-->
+			<script id="nohave" type="text/html">
+				<div class="search">
+					<div class="box">
+						<img src="image/cart/b1.png">
+						<div class="box1">
+							<p>您的购物车中没有商品，请先去挑选心爱的商品吧！</p>
+							<p>您可以选择现在<a href="../register/register.html">登录</a>查看之前加入购物车的商品，或者 <a href="index.html">随便逛逛</a></p>
+						</div>						
+					</div>
+					<div class="s-b"><input type="text" placeholder="搜索你感兴趣的商品~"><i class="iconfont">&#xe61f;</i></div>
+				</div>
+			</script>
+		</div>
+		</div>
+		<footer></footer>
+	</body>
+	<script src="js/jquery-1.11.0.js"></script>
+		<script src="js/template.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/sea.js"></script>
+		<script>seajs.use("Cart.js")</script>
+</html>

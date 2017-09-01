@@ -1,0 +1,86 @@
+/* CSS Document */
+
+/*public样式*/
+.topHeader,.navWrap,.footer{ min-width:1200px;}
+.topHeaderCon,.midHeaderCon,.navWrap .nav,.footerTop,.footerServices,.footerBot,.ban_cter{ width:1200px;}
+.topHeaderLeft{ width:370px; }
+.headerSearch,.headerSearch .hotWords{ width:540px;}
+.searchHome .search-form{ width:439px;}
+.searchHome .searchCon{ width:450px;}
+.searchCon ul a span{ width:280px;}
+.searchCon ul a em{ width:120px;}
+.footerServices ul li{ width:158px;}
+.footerServices ul li p,.footerServices ul li h3 span{ width:123px;}
+.nav .navList{ width:890px;}
+.navList li a.channel{ padding:0 22px;}
+.midHeader{ min-width:1200px;background:url(http://misc.jiuxian.com/img/bgImg/header1200.jpg) no-repeat top center;}
+/*首页1200样式*/
+.mainBox{width:1200px;}
+.ban_cter{ width:1200px;}
+.indexTabBox,.indexTabNav{ width:920px;}
+.indexTabNav li{ width:183px;}
+.indexTabNav .n2{ left:184px;}
+.indexTabNav .n3{ left:368px;}
+.indexTabNav .n4{ left:552px; width:183px;}
+.indexTabNav .n5{ left:736px; width:182px;}
+.indexTabNav .on{ width:183px;}
+.indexTabCon{ width:910px;}
+.indexTabCon li{ width:182px;}
+.indexTabCon li .indexTabPic{ heigth:160px;padding:0 11px;}
+.indexTabCon li .indexTabTit,.indexTabCon li .indexTabPrice{ padding:0 6px;}
+.storeList{ width:1199px;}
+.raceList{ width:1188px; padding:0 5px;}
+.raceList li{ width:198px;}
+.raceListWrap{ width:1198px;}
+.indexAdRight{  left:700px;}
+.spiritList{ width:988px;}
+.topTenBox,.topTenCon,.topTenConWrap{ width:985px;}
+.goods_mnudl{ overflow:hidden; zoom:1; width:1190px;}
+.goods_mnudl dt{ width:107px;}
+.goods_mnudl .goods_mnudtit4{ width:107px;}
+.goods_mnudl dd.goods_mnudd1,.goods_mnudl dd.goods_mnudd2{ padding:5px 8px; width:463px;}
+.goods_mnudl dd p a{ padding:0 8px;}
+.topRight li a{ padding:0 5px;}
+.Lay_2 .logoBox{ width:1168px;}
+.Lay_2 .logoAll ul{ width:1185px;}
+.spiritWrap{ width:1198px;}
+.indexAdBox p{ margin:0 0 0 90px;}
+/*列表页1200样式*/
+.main{ width:1200px;}
+.list_left,.pro_list,.pro_list{ width:1000px;}
+.hot_buy_pr_list{ width:978px;}
+.hot_buy_pr_list li{ margin-right:6px;}
+.cppr,.cppr_all,.brandv{ width:938px;}
+.brd_nav_zd,.brd_nav_lx{width:898px;}
+.brd_nav_cd,.brd_nav{ width: 898px; overflow: hidden; height: 24px;}
+.brd_nav_place{ width: 898px;}
+.brd_nav_price{ width:895px;}
+.slb,.scroll{width: 978px;}
+.slb0 .xz{width: 350px; margin-left: 115px;}
+.pro_list ul{ width:1200px;}
+.pro_list li{ margin-right: 16px;}
+
+/*搜索页1200样式*/
+.srp_ad{width: 1200px;}
+.srp{width:1200px;}
+.main-srp,.breadcrumb,.breadcrumb .line,.breadcrumb .crumb,.store,.alreadyS,.moreS{width:990px;}
+.store .info,.store .info .brand{width:690px;}
+.alreadyS .options{width:760px;}
+.brandS,.situationS,.order,.main-srp .proListSearch,.cqS,.order_fixed,.order_div,.select,.srpty .moreS{width:988px;}
+.brandS .frameR,.situationS .situ,.select .proRight{width:873px;}
+.frameC,.frameR .letterS,.brandAll,.brandAll.national{width:815px;}
+.letterS li{margin-right:7px;}
+.proListSearch li,.proListSearch li .frameB,.proListSearch li .content{width:247px;}
+.proListSearch li .frameA{width:249px;}
+.cqS .list{width:872px;}
+.moreOption .box{width:853px;}
+.property .limit.flow ul{width:800px;}
+.srpty .moreOption .box{width:852px;}
+.slide-bar{ margin-left:-291px;}
+.slide-item li .turnNav{width:1200px;}
+
+/*搜索列表页猜你喜欢*/
+.cnxhTabCon2015911{ width:910px;}
+.cnxhTabCon2015911 li{ width:182px;}
+.cnxhTabCon2015911 li .imgPicList{ heigth:160px;padding:0 11px;}
+.cnxhTabCon2015911 li .indexTabTit,.cnxhTabCon2015911 li .indexTabPrice{ padding:0 2px;}
