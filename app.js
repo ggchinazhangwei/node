@@ -10,6 +10,7 @@ var login = require('./routes/login');
 var shu = require('./routes/shu');
 var only = require('./routes/only');
 var top = require('./routes/top');
+var shop = require('./routes/shop');
 
 var app = express();
 app.use(cookieSession({
@@ -30,6 +31,7 @@ app.use('/login', login);
 app.use('/shu',shu);
 app.use('/only',only);
 app.use('/top',top);
+app.use('/shop',shop);
 app.use('/cancel',(req,res)=>{
   delete req.session.username;
   res.end();

@@ -18,7 +18,6 @@ define(function(require,exports,module) {
                     for(var i in data.pronews){
                         count+=Number(data.pronews[i]);
                     };
-                    console.log(count)
                     //渲染页面shopsum
                     $(".shopsum").html(count);
                     //！！！！！！当判断到用户已经登录时重新渲染头部页面
@@ -73,20 +72,26 @@ define(function(require,exports,module) {
     }
     /*事件！！！！！！！！！！点击加入购物车出事件*/
     function Shop(data){
-        var str=$.cookie("cart");
-        var obj=str? JSON.parse(str):{};
-                if(obj[data.productId]==undefined){
-                    obj[data.productId]=Number($(".pronu").val());
-                }else{
-                    obj[data.productId]+=Number($(".pronu").val());
-
-                }
-                $("#carmsg").css("display","block");
-                var objTostr=JSON.stringify(obj);
-                $.cookie("cart",objTostr,{expires:7});
-       $.get("only",function(data){
+       $.get("only",function(date){
             //如果用户存在点击购物车按钮改写数据库
-           //如果用户不存在点击按钮增加cookie
+           if(date.msg){
+               $.get("/shop",{num:$(".pronu").val(),xuhao:data.productId},function(){
+               })
+           }else{
+               //如果用户不存在点击按钮增加cookie
+               var str=$.cookie("cart");
+               var obj=str? JSON.parse(str):{};
+               if(obj[data.productId]==undefined){
+                   obj[data.productId]=Number($(".pronu").val());
+               }else{
+                   obj[data.productId]+=Number($(".pronu").val());
+
+               }
+               $("#carmsg").css("display","block");
+               var objTostr=JSON.stringify(obj);
+               $.cookie("cart",objTostr,{expires:7});
+           }
+
         });
         topSum();
         $("#carmsg").height(document.body.clientHeight);
