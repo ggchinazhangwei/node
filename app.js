@@ -11,6 +11,7 @@ var shu = require('./routes/shu');
 var only = require('./routes/only');
 var top = require('./routes/top');
 var shop = require('./routes/shop');
+var list = require('./routes/list');
 
 var app = express();
 app.use(cookieSession({
@@ -32,6 +33,7 @@ app.use('/shu',shu);
 app.use('/only',only);
 app.use('/top',top);
 app.use('/shop',shop);
+app.use('/list',list);
 app.use('/cancel',(req,res)=>{
   delete req.session.username;
   res.end();

@@ -5,12 +5,11 @@ define(function (require, exports, module) {
     common1.loadf();
     //模板引擎
     $.get("/shu", function (data) {
-        var html0 = "";
-        for (let i = 0; i < 4; i++) {
-            html0 += "<li><a href='particulars.html?" + data.productjson[i].productId + "'><img src='" + data.productjson[i].img1url[0] + "'></a></li>"
-        }
-        $(".guild").html(html0);
         var number = location.search.substr(4)-1;
+        if(number==-1){
+            number=9;
+        }
+        var cdata=data;
         var data = data.productjson[number];
         var html = template("titles", data);
         $("#title").append(html);
@@ -100,7 +99,7 @@ define(function (require, exports, module) {
         if (flag == false) {
             alert("请选择商品种类");
         } else {
-            common1.Shop(data);
+            common1.Shop(data,$(".pronu"),cdata);
         }
         });
     });

@@ -77,12 +77,13 @@ define(function(require,exports,module) {
         $("footer").load("public/footer.html");
     }
     /*事件！！！！！！！！！！点击加入购物车出事件*/
-    function Shop(data){
+    function Shop(data,domval,cdata){
        $.get("only",function(date){
             //如果用户存在点击购物车按钮改写数据库
            if(date.msg){
-               $.get("/shop",{num:$(".pronu").val(),xuhao:data.productId},function(){
-               })
+               $.get("/shop",{num:domval.val(),xuhao:data.productId},function(){
+               });
+               $("#carmsg").css("display","block");
            }else{
                //如果用户不存在点击按钮增加cookie
                var str=$.cookie("cart");
@@ -101,6 +102,12 @@ define(function(require,exports,module) {
         });
         topSum();
         $("#carmsg").height(document.body.clientHeight);
+        //设置弹窗
+        var html0 = "";
+        for (let i = 0; i < 4; i++) {
+            html0 += "<li><a href='particulars.html?" + cdata.productjson[i].productId + "'><img src='" + cdata.productjson[i].img1url[0] + "'></a></li>"
+        }
+        $(".guild").html(html0);
         /*设置关闭事件*/
         setInterval(function(){
             $("#carmsg").css("display","none");
