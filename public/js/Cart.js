@@ -3,7 +3,7 @@ define(function(require,exports,module){
 			common1.loadf();
 	$.get("/only",function(result){
 		if(result.msg){
-
+			console.log(result);
 		}else{
 			$.get("/shu",function(data){
 				var obj=$.cookie("cart");
