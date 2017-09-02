@@ -39,6 +39,7 @@ define(function(require,exports,module){
 			$(".lunbo5").Silder({"width":200,height:500});
 			//设置数据模板引擎
 			$.get("/shu",function(data){
+				console.log(data);
 				var html=template("pro",data);
 				$(".prouctList").html(html);
 			})

@@ -18,7 +18,6 @@ define(function(require,exports,module) {
                     for(var i in data.pronews){
                         count+=Number(data.pronews[i]);
                     };
-                    //渲染页面shopsum
                     $(".shopsum").html(count);
                     //！！！！！！当判断到用户已经登录时重新渲染头部页面
                     $(".only").html("hi ~ 你好"+data.username+"<input type='button' class='cancel' value='注销'>");
@@ -32,12 +31,19 @@ define(function(require,exports,module) {
                                 data.pronews[i]=objC[i];
                             }
                         }
-                        $.removeCookie("cart");
                         //发送请求改写后端mongodb数据库将cookie和数据库同步，将data.pronews同步
-                        $.get("/top",{newPronews:data.pronews},function(data){
+                        $.get("/top",{newPronews:data.pronews},function(date){
+                            //渲染页面shopsum
+                            let counts=0;
+                            for(var i in date){
+                                counts+=Number(date[i]);
+                            };
+                            $(".shopsum").html(counts);
+                            $.removeCookie("cart");
+                        });
 
-                        })
                     };
+
                     //点击注销清除cookie
                     $(".cancel").click(function(){
                         $.get("/cancel");

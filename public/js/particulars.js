@@ -4,17 +4,13 @@ define(function (require, exports, module) {
     common1.loadh();
     common1.loadf();
     //模板引擎
-    $.get("json/shuju.json", function (data) {
-        var arr = [];
-        for (let i in data.productjson) {
-            arr.push(i)
-        }
+    $.get("/shu", function (data) {
         var html0 = "";
         for (let i = 0; i < 4; i++) {
-            html0 += "<li><a href='particulars.html?" + arr[i] + "'><img src='" + data.productjson[arr[i]].img1url[0] + "'></a></li>"
+            html0 += "<li><a href='particulars.html?" + data.productjson[i].productId + "'><img src='" + data.productjson[i].img1url[0] + "'></a></li>"
         }
         $(".guild").html(html0);
-        var number = location.search.substr(1);
+        var number = location.search.substr(4)-1;
         var data = data.productjson[number];
         var html = template("titles", data);
         $("#title").append(html);
