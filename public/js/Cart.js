@@ -225,7 +225,7 @@ define(function(require,exports,module){
 							$.cookie("cart",JSON.stringify(obj),{expires:7});
 							$(this).parent().remove();
 							foo();
-							shanchu();
+							shanchu(JSON.stringify(obj),"{}");
 						})
 					}
 					/*清空购物车事件*/
