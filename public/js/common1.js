@@ -109,9 +109,6 @@ define(function(require,exports,module) {
         }
         $(".guild").html(html0);
         /*设置关闭事件*/
-        setInterval(function(){
-            $("#carmsg").css("display","none");
-        },4000)
         $(".cha").click(function(){
             $("#carmsg").css("display","none");
         });

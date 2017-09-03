@@ -46,7 +46,7 @@ define(function(require,exports,module){
 			function RemoveLi(_this,arr){
 				$.get("/removeli",{productId:_this.attr("dataid")});
 				_this.parent().remove();
-				shanchu(arr.length,0)
+				shanchu(arr.length,0);
 				foo();
 			};
 	/*！！！！！！！！！！！！！！！！全局共有变量方法结束部分*/
@@ -127,13 +127,21 @@ define(function(require,exports,module){
 				};
 				/*删除选中商品事件*/
 				$(".btn1").click(function(){
+					var inputArr=[];
 					for(let i=0;i<$(".ock").length;i++){
 						if($(".ock").eq(i).prop("checked")){
-							var _this=$(".ock").eq(i);
-								arr.splice(0,1);
-								RemoveLi(_this,arr);
+							inputArr.push($(".ock").eq(i).attr("dataid"));
+							$(".ock").eq(i).parent().remove();
+							$(".j3").html("￥"+0);
+							$(".j2").html(0);
+							$(".j1").html(0);
+							i--
+							arr.splice(0,1);
+							shanchu(arr.length,0);
+
 						}
-					}
+					};
+					$.post("/removesome",{"my":inputArr});
 				});
 				/*清空购物车事件*/
 				$(".btn2").click(function(){
@@ -234,10 +242,11 @@ define(function(require,exports,module){
 								delete obj[$(".ock").eq(i).parent().attr('dataId')];
 								$.cookie("cart",JSON.stringify(obj),{expires:7});
 								$(".ock").eq(i).parent().remove();
+								i--;
 								foo();
 							}
 						}
-						shanchu();
+						shanchu(JSON.stringify(obj),"{}");
 					})
 				}
 			});
@@ -245,4 +254,3 @@ define(function(require,exports,module){
 	})
 
 })
-			

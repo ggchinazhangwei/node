@@ -16,6 +16,7 @@ var cart = require('./routes/cart');
 var update = require('./routes/update');
 var removeli = require('./routes/removeli');
 var removeul = require('./routes/removeul');
+var removesome = require('./routes/removesome');
 var app = express();
 app.use(cookieSession({
   name:'mysession',
@@ -41,6 +42,7 @@ app.use('/cart',cart);
 app.use('/update',update);
 app.use('/removeli',removeli);
 app.use('/removeul',removeul);
+app.use('/removesome',removesome);
 app.use('/cancel',(req,res)=>{
   delete req.session.username;
   res.end();
