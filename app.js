@@ -12,7 +12,10 @@ var only = require('./routes/only');
 var top = require('./routes/top');
 var shop = require('./routes/shop');
 var list = require('./routes/list');
-
+var cart = require('./routes/cart');
+var update = require('./routes/update');
+var removeli = require('./routes/removeli');
+var removeul = require('./routes/removeul');
 var app = express();
 app.use(cookieSession({
   name:'mysession',
@@ -34,6 +37,10 @@ app.use('/only',only);
 app.use('/top',top);
 app.use('/shop',shop);
 app.use('/list',list);
+app.use('/cart',cart);
+app.use('/update',update);
+app.use('/removeli',removeli);
+app.use('/removeul',removeul);
 app.use('/cancel',(req,res)=>{
   delete req.session.username;
   res.end();

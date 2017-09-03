@@ -46,6 +46,24 @@
 			</script>
 		</div>
 		</div>
+		<script type="text/html" id="pro">
+			{{each productlist as item i}}
+				<li class='valign' dataId={{item.productId}}>
+					<input type='checkbox' class='ock' checked dataId={{item.productId}}>
+					<img src={{item.img1url[0]}}>
+					<div class='tbox over'>{{item.title}}</div>
+					<span class='op'>{{item.price}}</span>
+					<span class='mgold'>￥{{num[item.productId]*item.gold}}</span>
+					<div class='carsum'>
+						<input type='button' value='+' class='zuo' dataId={{item.productId}} />
+						<input type='' value={{num[item.productId]}} class='c-number'>
+						<input type='button' value='-' class='you' dataId={{item.productId}} />
+					</div>
+					<div class='heji'>￥{{num[item.productId]*item.price}}</div>
+					<input type='button' value='删除' class='removep' dataId={{item.productId}}>
+				</li>
+			{{/each}}
+		</script>
 		<footer></footer>
 	</body>
 	<script src="js/jquery-1.11.0.js"></script>
